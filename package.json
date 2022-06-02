@@ -23,6 +23,7 @@
     "intl-tel-input": "^17.0.16",
     "jquery": "^3.6.0",
     "ng2-tel-input": "^2.3.0",
+    "ngx-countdown": "^13.0.0",
     "ngx-toastr": "^14.3.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",

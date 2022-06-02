@@ -28,3 +28,20 @@ input.ng-invalid.ng-touched
         width: 120%;
     }
 }
+
+.float{
+	position:fixed;
+	width:125px;
+	height:120px;
+	bottom:40px;
+	right:20px;
+	background-color:#0C9;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+	box-shadow: 2px 2px 3px #999;
+}
+
+.my-float{
+	margin-top:22px;
+}

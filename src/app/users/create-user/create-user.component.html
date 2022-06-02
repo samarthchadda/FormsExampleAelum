@@ -106,12 +106,17 @@
   
               <div class="px-5 py-4">
                 <button [disabled]="!form.valid" type="submit" class="btn btn-primary btn-lg">Submit Details</button>
+                <button (click)=" form.resetForm()" type="button" class="btn btn-danger btn-lg ml-lg-4">Reset</button>
               </div>
 
             </form>
             </div>
           </div>
   
+        <button type="button" class="btn float my-float" style="background-color: #F06528; color: white;">
+            <h6 style="color: white;">Session Expires In : <countdown [config]="{ leftTime: 300, format: 'mm:ss' }"></countdown></h6>
+        </button>
+
         </div>
       </div>
     </div>

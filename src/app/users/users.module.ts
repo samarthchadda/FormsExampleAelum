@@ -7,6 +7,7 @@ import { ListComponent } from './list/list.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Ng2TelInputModule } from 'ng2-tel-input';
 import { ToastrModule } from 'ngx-toastr';
+import { CountdownModule } from 'ngx-countdown';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { ToastrModule } from 'ngx-toastr';
     FormsModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(), // ToastrModule added
+    CountdownModule,
     UsersRoutingModule
   ]
 })

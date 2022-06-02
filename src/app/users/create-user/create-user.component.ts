@@ -15,7 +15,14 @@ export class CreateUserComponent implements OnInit {
   constructor(
     private toastr:ToastrService,
     private routerBtn:Router
-  ) { }
+  )
+  {
+    //After 5 min, if form is not submitted , then return back to Users-List page
+    setTimeout(()=>{
+      this.toastr.error("Session Expired");
+      this.routerBtn.navigate(['/users']);
+    },300000)
+  }
 
   ngOnInit(): void {
   }
