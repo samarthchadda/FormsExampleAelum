@@ -4,6 +4,8 @@ import { CommonModule } from '@angular/common';
 import { UsersRoutingModule } from './users-routing.module';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ListComponent } from './list/list.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { Ng2TelInputModule } from 'ng2-tel-input';
 
 
 @NgModule({
@@ -13,6 +15,9 @@ import { ListComponent } from './list/list.component';
   ],
   imports: [
     CommonModule,
+    Ng2TelInputModule,
+    FormsModule,
+    ReactiveFormsModule,
     UsersRoutingModule
   ]
 })
