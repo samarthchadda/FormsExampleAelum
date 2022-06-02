@@ -73,7 +73,7 @@
                 </div>
                 <div class="col-md-9 pe-5">
                   <input type="text" ng2TelInput (countryChange)="getCountryCode($event)"
-                   class="form-control form-control-lg" name="telephone" ngModel required
+                   class="form-control form-control-lg telephone" name="telephone" ngModel required
                     pattern="^[1-9]\d{9}$" #phoneRef="ngModel"/>
                   <div *ngIf="phoneRef.errors?.['required']  && phoneRef.touched" class="errorDiv">
                     *Phone is required!
