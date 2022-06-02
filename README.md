@@ -3,7 +3,7 @@ As per the instructions, a form is created(USER-FORM) with the required inputs.
 Technologies Used : HTML, Bootstrap, CSS, TypeScript ( i.e. Angular Framework)
 
 3rd party Dependencies : 
- "bootstrap": "^4.6.1    (For purpose of enhanced Style)
+ "bootstrap": "^4.6.1    (For purpose of enhanced Style)  <br>
  "ng2-tel-input": "^2.3.0",  (For purpose of Country Code and Flags)
  "ngx-countdown": "^13.0.0", (For Purpose of Session Timer)
  "ngx-toastr": "^14.3.0",   (For Purpose of enhanced alert message)
