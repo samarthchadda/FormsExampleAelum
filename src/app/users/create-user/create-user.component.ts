@@ -17,7 +17,13 @@ export class CreateUserComponent implements OnInit {
 
   onSubmit(form:NgForm)
   {
-    form.value.telephone = this.dialCode + form.value.telephone;
+    if(this.dialCode=='')
+    {
+      form.value.telephone = "+1-"+ form.value.telephone;
+    }
+    else{
+      form.value.telephone = this.dialCode +"-"+ form.value.telephone;
+    }
     console.log(form.value);
   }
 
@@ -25,6 +31,10 @@ export class CreateUserComponent implements OnInit {
   {
     console.log(eventInfo.dialCode);
     this.dialCode = "+"+eventInfo.dialCode;
+  }
+
+  getToday(): string {
+    return new Date().toISOString().split('T')[0]
   }
 
 }
